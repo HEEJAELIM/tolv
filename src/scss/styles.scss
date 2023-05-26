@@ -99,6 +99,10 @@ main {
       &:nth-child(10) {
         grid-column-start: span 2;
       }
+      &:hover {
+        filter: blur(60px);
+        cursor: pointer;
+      }
       .pic_background_a {
         @include picture(a);
       }
@@ -149,9 +153,16 @@ footer {
     margin-top: 150px;
     margin-left: 5vw;
     li {
+      &:first-child {
+        opacity: 0.6;
+      }
       margin-top: 20px;
       cursor: pointer;
       color: white;
+      padding: 1px;
+      &:hover {
+        border-bottom: 1px solid white;
+      }
     }
   }
 }
