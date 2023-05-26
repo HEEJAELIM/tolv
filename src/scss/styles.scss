@@ -86,4 +86,72 @@ main {
       }
     }
   }
+  .picture {
+    margin: 2px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 40vh;
+    gap: 2px;
+    .pic {
+      &:first-child,
+      &:nth-child(5),
+      &:nth-child(7),
+      &:nth-child(10) {
+        grid-column-start: span 2;
+      }
+      .pic_background_a {
+        @include picture(a);
+      }
+      .pic_background_b {
+        @include picture(b);
+      }
+      .pic_background_c {
+        @include picture(c);
+      }
+      .pic_background_d {
+        @include picture(d);
+      }
+      .pic_background_e {
+        @include picture(e);
+      }
+      .pic_background_f {
+        @include picture(f);
+      }
+      .pic_background_g {
+        @include picture(g);
+      }
+      .pic_background_h {
+        @include picture(h);
+      }
+      .pic_background_i {
+        @include picture(i);
+      }
+      .pic_background_j {
+        @include picture(j);
+      }
+      .pic_background_k {
+        @include picture(k);
+      }
+      .pic_background_l {
+        @include picture(l);
+      }
+    }
+  }
+}
+
+footer {
+  height: 100vh;
+  background-color: #535851;
+  display: flex;
+  justify-content: flex-start;
+  ul {
+    width: 60%;
+    margin-top: 150px;
+    margin-left: 5vw;
+    li {
+      margin-top: 20px;
+      cursor: pointer;
+      color: white;
+    }
+  }
 }
